@@ -31,5 +31,6 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: Installing Surge
       run: npm install --g surge
-    
-    - name: surge ./ neonapp.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      
+    - name: Run Surge
+      run: surge ./ neonapp.surge.sh --token ${{secrets.SURGE_TOKEN}}
