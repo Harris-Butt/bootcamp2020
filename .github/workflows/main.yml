@@ -32,4 +32,4 @@ jobs:
     - name: Installing Surge
       run: npm install --g surge
     
-    - name: surge ./ neonapp.surge.sh --token ${{secret.SURGE_TOKEN}}
+    - name: surge ./ neonapp.surge.sh --token ${{secrets.SURGE_TOKEN}}
